@@ -19,7 +19,8 @@ experiment(StopTime=1.0),
 Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}),
                     graphics),
-                     __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Functions/Examples/RegNonZeroPowerDerivativeCheck.mos" "Simulate and plot"),
+                     __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Functions/Examples/RegNonZeroPowerDerivativeCheck.mos"
+        "Simulate and plot"),
     Documentation(info="<html>
 <p>
 This example checks whether the function derivative

@@ -28,7 +28,8 @@ First implementation.
 </html>"));
   end flowParameters;
 
-  record flowParametersInternal "Record for flow parameters with prescribed size"
+  record flowParametersInternal
+    "Record for flow parameters with prescribed size"
     extends Modelica.Icons.Record;
     parameter Integer n "Number of elements in each array";
     parameter Modelica.SIunits.VolumeFlowRate V_flow[n](each min=0)
@@ -66,7 +67,6 @@ First implementation.
 </html>"));
   end flowParametersInternal;
 
-
   record efficiencyParameters "Record for efficiency parameters"
     extends Modelica.Icons.Record;
     parameter Real  r_V[:](each min=0, each max=1, each displayUnit="1")
@@ -99,8 +99,7 @@ First implementation.
     parameter Modelica.SIunits.VolumeFlowRate V_flow[:](each min=0)= {0}
       "Volume flow rate at user-selected operating points";
     parameter Modelica.SIunits.Power P[size(V_flow,1)](
-       each min=0) = {0}
-      "Fan or pump electrical power at these flow rates";
+       each min=0) = {0} "Fan or pump electrical power at these flow rates";
     annotation (Documentation(info="<html>
 <p>
 Data record for performance data that describe volume flow rate versus
@@ -129,7 +128,9 @@ First implementation.
   function pressure
     "Flow vs. head characteristics for fan or pump pressure raise"
     extends Modelica.Icons.Function;
-    input Buildings.Fluid.Movers.BaseClasses.Characteristics.flowParametersInternal data
+    input
+      Buildings.Fluid.Movers.BaseClasses.Characteristics.flowParametersInternal
+                                                                                    data
       "Pressure performance data";
     input Modelica.SIunits.VolumeFlowRate V_flow "Volumetric flow rate";
     input Real r_N(unit="1") "Relative revolution, r_N=N/N_nominal";
@@ -157,7 +158,9 @@ First implementation.
       input Real r_N(unit="1") "Relative revolution, r_N=N/N_nominal";
       input Real d[dimD]
         "Coefficients for polynomial of pressure vs. flow rate";
-      input Buildings.Fluid.Movers.BaseClasses.Characteristics.flowParametersInternal data
+      input
+        Buildings.Fluid.Movers.BaseClasses.Characteristics.flowParametersInternal
+                                                                                      data
         "Pressure performance data";
       input Integer dimD "Dimension of data vector";
 

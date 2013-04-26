@@ -14,7 +14,6 @@ model RelativeTemperature "Ideal relative temperature sensor"
                                 redeclare package Medium = Medium)
     annotation (Placement(transformation(extent={{110,-10},{90,10}}, rotation=
            0)));
-
   Modelica.Blocks.Interfaces.RealOutput T_rel(final quantity="Temperature",
                                               final unit = "K", displayUnit = "degC", min=0)
     "Relative temperature signal"
@@ -27,7 +26,6 @@ equation
   // Zero flow equations for connectors
   port_a.m_flow = 0;
   port_b.m_flow = 0;
-
   // No contribution of specific quantities
   port_a.h_outflow = 0;
   port_b.h_outflow = 0;
@@ -35,7 +33,6 @@ equation
   port_b.Xi_outflow = zeros(Medium.nXi);
   port_a.C_outflow  = zeros(Medium.nC);
   port_b.C_outflow  = zeros(Medium.nC);
-
   // Relative temperature
   T_rel = Medium.temperature(Medium.setState_phX(port_a.p, inStream(port_a.h_outflow), inStream(port_a.Xi_outflow))) -
           Medium.temperature(Medium.setState_phX(port_b.p, inStream(port_b.h_outflow), inStream(port_b.Xi_outflow)));
@@ -62,7 +59,6 @@ equation
           smooth=Smooth.None,
           fillColor={0,128,255},
           fillPattern=FillPattern.Solid)}),
-   
     Documentation(info="<html>
 <p>
 The relative temperature \"T(port_a) - T(port_b)\" is determined between

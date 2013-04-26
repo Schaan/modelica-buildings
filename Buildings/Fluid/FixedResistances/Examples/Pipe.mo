@@ -103,7 +103,6 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=120),
-
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},{140,
             100}})),
     __Dymola_Commands(file=

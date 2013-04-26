@@ -12,8 +12,7 @@ model MixingVolumeMoistAir
     V=1,
     nPorts=2,
     m_flow_nominal=0.001,
-    energyDynamics=Modelica.Fluid.Types.Dynamics.DynamicFreeInitial) 
-    "Volume"
+    energyDynamics=Modelica.Fluid.Types.Dynamics.DynamicFreeInitial) "Volume"
           annotation (Placement(transformation(extent={{50,0},{70,20}},
           rotation=0)));
   Modelica.Thermal.HeatTransfer.Sensors.TemperatureSensor TSen

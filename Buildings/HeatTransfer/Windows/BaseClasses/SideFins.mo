@@ -146,7 +146,6 @@ equation
     tanLambda = 0;
     y2 = 0;
     x2 = 0;
-
     x1 = fill(0.0, 4);
     x3 = fill(0.0, 4);
     y1 = fill(0.0, 4);
@@ -156,7 +155,6 @@ equation
     minY2Y3 = fill(0.0, 4);
     minY = fill(0.0, 4);
     area = fill(0.0, 4);
-
     shdArea = 0;
     crShdArea1 = 0;
     crShdArea2 = 0;

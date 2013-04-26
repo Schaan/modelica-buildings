@@ -11,8 +11,7 @@ equation
         color={255,0,255}));
  annotation (
 experiment(StopTime=1.0),
-Diagram(graphics),
-                      __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Controls/Discrete/Examples/BooleanDelay.mos"
+Diagram(graphics),    __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Controls/Discrete/Examples/BooleanDelay.mos"
         "Simulate and plot"),
     Documentation(info="<html>
 <p>

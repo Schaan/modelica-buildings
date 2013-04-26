@@ -15,7 +15,6 @@ equation
   V_flow = Buildings.Airflow.Multizone.BaseClasses.powerLaw(dp=dp, k=k, m=m, dp_turbulent=dp_turbulent);
   annotation (
 experiment(StopTime=1.0),
-
   __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Airflow/Multizone/BaseClasses/Examples/PowerLaw.mos"
         "Simulate and plot"), Documentation(info="<html>
 <p>

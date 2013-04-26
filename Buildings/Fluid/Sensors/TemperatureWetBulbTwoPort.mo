@@ -1,7 +1,6 @@
 within Buildings.Fluid.Sensors;
 model TemperatureWetBulbTwoPort "Ideal wet bulb temperature sensor"
   extends Buildings.Fluid.Sensors.BaseClasses.PartialDynamicFlowSensor;
-
   Modelica.Blocks.Interfaces.RealOutput T(
     start=TWetBul_start,
     final quantity="Temperature",
@@ -14,14 +13,11 @@ model TemperatureWetBulbTwoPort "Ideal wet bulb temperature sensor"
         extent={{-10,-10},{10,10}},
         rotation=90,
         origin={0,110})));
-
   parameter Modelica.SIunits.Temperature TWetBul_start = Medium.T_default
     "<html>Initial or guess value of <b>wet bulb</b> temperature (used to compute initial output signal))</html>"
     annotation (Dialog(group="Initialization"));
-
   Medium.Temperature TMedWetBul(start=TWetBul_start)
     "Medium wet bulb temperature to which the sensor is exposed";
-
 protected
   Buildings.Utilities.Psychrometrics.TWetBul_TDryBulXi wetBulMod(
     redeclare package Medium = Medium) "Block for wet bulb temperature";
@@ -57,7 +53,6 @@ equation
   else
     T = TMedWetBul;
   end if;
-
 annotation (defaultComponentName="senWetBul",
   Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{100,
             100}}),

@@ -10,6 +10,7 @@ model ElectricReformulatedEIR
       per);
   annotation (
 experiment(StopTime=4*3600),
-__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Chillers/Examples/ElectricReformulatedEIR.mos" "Simulate and plot"), Diagram(
+__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Chillers/Examples/ElectricReformulatedEIR.mos"
+        "Simulate and plot"),                                                                                                    Diagram(
         graphics));
 end ElectricReformulatedEIR;

@@ -3,7 +3,6 @@ model MixingVolumePrescribedHeatFlowRate
   "Test model for heat transfer to volume"
   extends Modelica.Icons.Example;
     package Medium = Modelica.Media.Air.SimpleAir;
-
   Modelica.Thermal.HeatTransfer.Sensors.HeatFlowSensor heaFlo
     "Heat flow sensor"
     annotation (Placement(transformation(extent={{0,20},{20,40}})));

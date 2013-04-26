@@ -51,7 +51,6 @@ end when;
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=1),
-
   __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/IO/Python27/Examples/KalmanFilter.mos"
         "Simulate and plot"),
         Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,

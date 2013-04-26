@@ -4,7 +4,6 @@ model SideFins
   import Buildings;
   extends Buildings.Rooms.BaseClasses.SideFins;
   extends Buildings.HeatTransfer.Windows.BaseClasses.PartialShade_weatherBus;
-
   Buildings.HeatTransfer.Windows.BaseClasses.SideFins fin(
     final dep=dep,
     final h=h,

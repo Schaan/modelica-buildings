@@ -4,7 +4,6 @@ model LatentEnthalpyFlowRate
   extends Buildings.Fluid.Sensors.BaseClasses.PartialDynamicFlowSensor(tau=0);
   extends Buildings.Fluid.BaseClasses.IndexWater;
   extends Modelica.Icons.RotationalSensor;
-
   Modelica.Blocks.Interfaces.RealOutput H_flow(unit="W")
     "Latent enthalpy flow rate, positive if from port_a to port_b"
     annotation (Placement(transformation(

@@ -50,7 +50,6 @@ equation
       extent={{6,3},{6,3}}));
   annotation (
 experiment(StopTime=8640000),
-
     __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/BoundaryConditions/SolarIrradiation/BaseClasses/Examples/SkyBrightness.mos"
         "Simulate and plot"),
     Icon(graphics));

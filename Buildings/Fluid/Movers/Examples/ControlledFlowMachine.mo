@@ -10,7 +10,6 @@ model ControlledFlowMachine
 
   annotation (
 experiment(StopTime=600),
-
     __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Movers/Examples/ControlledFlowMachine.mos"
         "Simulate and plot"),
     Documentation(info="<html>
@@ -22,4 +21,5 @@ which leads to an error because of <code>0/0</code> at zero flow rate.
 </html>"),
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-160,-100},{160,
             160}})));
+
 end ControlledFlowMachine;

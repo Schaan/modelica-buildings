@@ -202,7 +202,8 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=1.0),
-__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/HeatTransfer/Windows/BaseClasses/Examples/Shade.mos" "Simulate and plot"),
+__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/HeatTransfer/Windows/BaseClasses/Examples/Shade.mos"
+        "Simulate and plot"),
               Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-160,
             -160},{160,160}}),
                       graphics),

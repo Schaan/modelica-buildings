@@ -74,13 +74,12 @@ protected
   function checkSurfaceAreas
     input Integer n "Number of surfaces";
     input Modelica.SIunits.Area A[:] "Surface areas";
-    input String name
-      "Name of the surface data record, used in error message";
+    input String name "Name of the surface data record, used in error message";
   algorithm
     if n == 0 then
       assert(Modelica.Math.Vectors.norm(v=A, p=1) < 1E-10,
-      "Error in declaration of room model: Construction record '" + 
-      name + 
+      "Error in declaration of room model: Construction record '" +
+      name +
       "' has the following areas: " +
       Modelica.Math.Vectors.toString(A) +
       "However, the room model is declared as having zero surfaces.

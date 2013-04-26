@@ -117,7 +117,6 @@ equation
       smooth=Smooth.None));
     annotation (
 experiment(StopTime=7200),
-
              __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Sensors/Examples/ExtraProperty.mos"
         "Simulate and plot"),
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},{180,

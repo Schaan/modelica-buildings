@@ -10,11 +10,11 @@ equation
   x=2*time-1;
   xInv = if ( abs(x) > 0.1)   then 1 / x else 0;
   y = Buildings.Utilities.Math.Functions.inverseXRegularized(x=x, delta=delta);
-
   annotation (
 experiment(StopTime=1.0),
 Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}),
                      graphics),
-                      __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Functions/Examples/InverseXRegularized.mos" "Simulate and plot"));
+                      __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Functions/Examples/InverseXRegularized.mos"
+        "Simulate and plot"));
 end InverseXRegularized;

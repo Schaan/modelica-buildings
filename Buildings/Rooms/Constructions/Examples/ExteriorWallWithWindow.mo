@@ -269,7 +269,6 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=1209600),
-
     __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Rooms/Constructions/Examples/ExteriorWallWithWindow.mos"
         "Simulate and plot"),
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-200,-140},{200,

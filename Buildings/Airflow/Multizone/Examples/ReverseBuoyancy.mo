@@ -253,7 +253,6 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=3600),
-
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-200,-100},{200,
             200}}), graphics={
         Rectangle(

@@ -1,6 +1,6 @@
 within Buildings.Fluid.HeatExchangers.BaseClasses.Examples;
 model EpsilonNTUZ "Test model for the functions epsilon_ntuZ and ntu_epsilonZ"
-  extends Modelica.Icons.Example; 
+  extends Modelica.Icons.Example;
   import f = Buildings.Fluid.Types.HeatExchangerFlowRegime;
   Real epsilon[5] "Heat exchanger effectiveness";
   Real eps[5] "Heat exchanger effectiveness";
@@ -23,7 +23,8 @@ equation
   end for;
   annotation (
 experiment(StopTime=1.0),
-__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/HeatExchangers/BaseClasses/Examples/EpsilonNTUZ.mos" "Simulate and plot"), Documentation(info="<html>
+__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/HeatExchangers/BaseClasses/Examples/EpsilonNTUZ.mos"
+        "Simulate and plot"),                                                                                                    Documentation(info="<html>
 Model to test the implementation of the epsilon-NTU functions and their inverse functions.
 </html>"));
 end EpsilonNTUZ;

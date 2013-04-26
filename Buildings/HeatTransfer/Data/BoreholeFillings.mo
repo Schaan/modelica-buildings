@@ -1,6 +1,5 @@
 within Buildings.HeatTransfer.Data;
-package BoreholeFillings
-  "Package with materials for borehole fillings"
+package BoreholeFillings "Package with materials for borehole fillings"
     extends Modelica.Icons.MaterialPropertiesPackage;
 
   record Generic =

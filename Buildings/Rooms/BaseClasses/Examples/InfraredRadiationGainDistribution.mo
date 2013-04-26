@@ -5,7 +5,6 @@ model InfraredRadiationGainDistribution
   extends
     Buildings.Rooms.BaseClasses.Examples.BaseClasses.PartialInfraredRadiation;
   import Buildings;
-
   Buildings.Rooms.BaseClasses.InfraredRadiationGainDistribution irRadGai(
     nConExt=nConExt,
     nConExtWin=nConExtWin,
@@ -23,7 +22,6 @@ model InfraredRadiationGainDistribution
 protected
   Modelica.Blocks.Sources.Constant QRad_flow(k=1) "Radiative heat gain"
     annotation (Placement(transformation(extent={{-80,0},{-60,20}})));
-
   Modelica.Blocks.Sources.Constant zer[NConExtWin](each k=0)
     "Outputs zero. This block is needed to send a signal to the shading connector if no window is used in the room model"
     annotation (Placement(transformation(extent={{-80,40},{-60,60}})));
@@ -56,7 +54,6 @@ equation
       points={{40,-90},{24,-90},{24,1.66667},{10.0833,1.66667}},
       color={191,0,0},
       smooth=Smooth.None));
-
   connect(QRad_flow.y, irRadGai.Q_flow)     annotation (Line(
       points={{-59,10},{-40,10},{-40,20},{-31.6667,20}},
       color={0,0,127},
@@ -67,5 +64,6 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=1.0),
-Diagram(graphics), __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Rooms/BaseClasses/Examples/InfraredRadiationGainDistribution.mos" "Simulate and plot"));
+Diagram(graphics), __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Rooms/BaseClasses/Examples/InfraredRadiationGainDistribution.mos"
+        "Simulate and plot"));
 end InfraredRadiationGainDistribution;

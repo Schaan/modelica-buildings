@@ -29,5 +29,6 @@ January 18, 2011, by Wangda Zuo:<br>
 First implementation.
 </li>
 </ul>
-</html>"));
+</html>"),
+    experiment(StopTime=3600));
 end KMinusU;

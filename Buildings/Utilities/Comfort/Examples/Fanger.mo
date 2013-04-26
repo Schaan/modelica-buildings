@@ -81,8 +81,7 @@ equation
       smooth=Smooth.None));
  annotation (
 experiment(StopTime=1.0),
-Diagram(graphics),
-                      __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Comfort/Examples/Fanger.mos"
+Diagram(graphics),    __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Comfort/Examples/Fanger.mos"
         "Simulate and plot"),
     Documentation(info="<html>
 This is a test of the Thermal Comfort Model.

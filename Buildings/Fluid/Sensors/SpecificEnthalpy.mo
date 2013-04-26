@@ -7,7 +7,6 @@ model SpecificEnthalpy "Ideal one port specific enthalpy sensor"
     "Specific enthalpy in port medium"
     annotation (defaultComponentName="senSpeEnt",
         Placement(transformation(extent={{100,-10},{120,10}}, rotation=0)));
-
 equation
   h_out = inStream(port.h_outflow);
 annotation (defaultComponentName="senEnt",

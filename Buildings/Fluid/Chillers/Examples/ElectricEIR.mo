@@ -8,5 +8,6 @@ model ElectricEIR "Test model for chiller electric EIR"
       per);
   annotation (
 experiment(StopTime=4*3600),
-__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Chillers/Examples/ElectricEIR.mos" "Simulate and plot"));
+__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Chillers/Examples/ElectricEIR.mos"
+        "Simulate and plot"));
 end ElectricEIR;

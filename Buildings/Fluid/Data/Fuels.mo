@@ -2,7 +2,6 @@ within Buildings.Fluid.Data;
 package Fuels "Package with properties of fuels"
     extends Modelica.Icons.MaterialPropertiesPackage;
 
-
   record NaturalGasLowerHeatingValue = Buildings.Fluid.Data.Fuels.Generic (
       h=50E6,
       d=0.84,
@@ -50,7 +49,7 @@ First implementation.
 </li>
 </ul>
 </html>"));
-end Generic;
+  end Generic;
 
     annotation (
 preferredView="info",

@@ -99,7 +99,6 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=1),
-
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},{200,
             100}}), graphics={Rectangle(
           extent={{-52,60},{48,-88}},

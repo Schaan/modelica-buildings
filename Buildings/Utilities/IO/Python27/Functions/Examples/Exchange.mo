@@ -106,7 +106,6 @@ algorithm
 
   annotation (
 experiment(StopTime=1.0),
-
   __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/IO/Python27/Functions/Examples/Exchange.mos"
         "Simulate and plot"),
 Documentation(info="<html>

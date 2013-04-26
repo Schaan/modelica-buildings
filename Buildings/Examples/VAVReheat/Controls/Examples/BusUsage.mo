@@ -1,7 +1,6 @@
 within Buildings.Examples.VAVReheat.Controls.Examples;
 model BusUsage "Demonstrates the usage of a signal bus"
   extends Modelica.Icons.Example;
-
 public
   Modelica.Blocks.Sources.IntegerStep integerStep(
     height=1,
@@ -14,7 +13,6 @@ public
   Modelica.Blocks.Sources.Sine sine
                                    annotation (Placement(transformation(
           extent={{-60,40},{-40,60}}, rotation=0)));
-
   Modelica.Blocks.Examples.BusUsage_Utilities.Part part
             annotation (Placement(transformation(extent={{-60,-80},{-40,-60}},
           rotation=0)));
@@ -28,7 +26,6 @@ protected
         extent={{-20,20},{20,-20}},
         rotation=90)));
 equation
-
   connect(booleanStep.y, controlBus.booleanSignal) annotation (Line(
       points={{-37,10},{30,10}},
       color={255,0,255},

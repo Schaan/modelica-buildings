@@ -164,7 +164,6 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=36000),
-
   __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Sensors/Conversions/Examples/To_VolumeFraction.mos"
         "Simulate and plot"),
   Diagram(coordinateSystem(preserveAspectRatio=false,extent={{-200,-100},{200,100}})),

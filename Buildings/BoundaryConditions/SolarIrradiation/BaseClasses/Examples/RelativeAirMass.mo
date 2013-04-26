@@ -22,5 +22,6 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=864000),
-Diagram(graphics), __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/BoundaryConditions/SolarIrradiation/BaseClasses/Examples/RelativeAirMass.mos" "Simulate and plot"));
+Diagram(graphics), __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/BoundaryConditions/SolarIrradiation/BaseClasses/Examples/RelativeAirMass.mos"
+        "Simulate and plot"));
 end RelativeAirMass;

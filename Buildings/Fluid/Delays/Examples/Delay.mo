@@ -1,6 +1,6 @@
 within Buildings.Fluid.Delays.Examples;
 model Delay
-  extends Modelica.Icons.Example; 
+  extends Modelica.Icons.Example;
 // We set X_default to a small enough value to avoid saturation at the medium temperature
 // that is used in this model.
  package Medium = Buildings.Media.GasesPTDecoupled.MoistAirUnsaturated(X_default={0.001, 0.999});
@@ -70,5 +70,6 @@ experiment(StopTime=1.0),
 Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,
             -100},{100,100}}),
                         graphics),
-             __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Delays/Examples/Delay.mos" "Simulate and plot"));
+             __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Delays/Examples/Delay.mos"
+        "Simulate and plot"));
 end Delay;

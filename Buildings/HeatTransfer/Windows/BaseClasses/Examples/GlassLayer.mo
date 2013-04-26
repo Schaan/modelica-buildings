@@ -41,8 +41,7 @@ model GlassLayer "Test model for glass layer heat transfer"
         extent={{-10,-10},{10,10}},
         rotation=180,
         origin={114,-60})));
-  Modelica.Blocks.Sources.Constant QAbs_flow(k=0)
-    "Absorbed solar heat flow"
+  Modelica.Blocks.Sources.Constant QAbs_flow(k=0) "Absorbed solar heat flow"
     annotation (Placement(transformation(extent={{-60,74},{-40,94}})));
   Buildings.HeatTransfer.Radiosity.RadiositySplitter radShaInt
     "Radiosity that strikes shading device"
@@ -249,7 +248,8 @@ equation
       smooth=Smooth.None));
     annotation (
 experiment(StopTime=1.0),
-__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/HeatTransfer/Windows/BaseClasses/Examples/GlassLayer.mos" "Simulate and plot"),
+__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/HeatTransfer/Windows/BaseClasses/Examples/GlassLayer.mos"
+        "Simulate and plot"),
               Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-160,
             -160},{160,160}}),
                       graphics),

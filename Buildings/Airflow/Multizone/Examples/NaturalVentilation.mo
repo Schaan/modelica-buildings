@@ -90,7 +90,6 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=7200),
-
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},{200,
             100}})),
     __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Airflow/Multizone/Examples/NaturalVentilation.mos"

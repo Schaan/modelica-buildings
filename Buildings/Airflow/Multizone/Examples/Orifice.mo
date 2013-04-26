@@ -72,7 +72,6 @@ equation
       smooth=Smooth.None));
   annotation (
 experiment(StopTime=1),
-
     __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Airflow/Multizone/Examples/Orifice.mos"
         "Simulate and plot"),
     Documentation(info="<html>
