@@ -32,7 +32,9 @@ equation
           {-22,-31}}, color={0,0,127}));
   connect(ram.y, pri3.x[2]) annotation (Line(points={{-59,10},{-40,10},{-40,-29},
           {-22,-29}}, color={0,0,127}));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
+  annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}})),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Reports/Examples/Printer.mos"
         "Simulate and plot"));

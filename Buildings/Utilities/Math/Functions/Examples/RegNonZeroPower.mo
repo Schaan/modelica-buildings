@@ -5,7 +5,9 @@ model RegNonZeroPower
 equation
   y=Buildings.Utilities.Math.Functions.regNonZeroPower(
                                              time, 0.3, 0.5);
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
+  annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}),
                      graphics),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Functions/Examples/RegNonZeroPower.mos" "Simulate and plot"));

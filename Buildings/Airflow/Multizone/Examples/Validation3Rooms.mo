@@ -233,6 +233,8 @@ equation
       color={191,0,0},
       smooth=Smooth.None));
   annotation (
+experiment(StopTime=3600),
+
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-200,-150},{300,
             250}}), graphics={
         Rectangle(

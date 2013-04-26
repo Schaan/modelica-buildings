@@ -249,7 +249,9 @@ equation
       points={{61,80},{92,80},{92,58},{82,58}},
       color={0,0,127},
       smooth=Smooth.None));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-100,
+  annotation (
+experiment(StopTime=360),
+Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-100,
             -100},{100,100}})),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/HeatExchangers/Examples/DryEffectivenessNTU.mos"
         "Simulate and plot"));

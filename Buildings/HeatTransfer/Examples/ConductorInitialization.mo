@@ -120,7 +120,9 @@ equation
       points={{20,-80},{60,-80}},
       color={191,0,0},
       smooth=Smooth.None));
-  annotation (Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,
+  annotation (
+experiment(StopTime=86400),
+Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,
             -100},{100,100}}), graphics={Text(
           extent={{-60,50},{58,58}},
           lineColor={0,0,0},

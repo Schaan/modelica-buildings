@@ -43,7 +43,9 @@ equation
           -44},{38,-44}}, color={0,0,127}));
   connect(Min.y, assEquMin.u2) annotation (Line(points={{1,-70},{20,-70},{20,
           -56},{38,-56}}, color={0,0,127}));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
+  annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}),
                      graphics),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Examples/SmoothBlocks.mos"

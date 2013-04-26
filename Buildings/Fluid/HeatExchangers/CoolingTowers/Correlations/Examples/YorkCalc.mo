@@ -23,7 +23,9 @@ equation
                                                                     FRWat=1,
                                                                     FRAir=x);
 
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
+  annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}),
                      graphics),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/HeatExchangers/CoolingTowers/Correlations/Examples/YorkCalc.mos" "Simulate and plot"));

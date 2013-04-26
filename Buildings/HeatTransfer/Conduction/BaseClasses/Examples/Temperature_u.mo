@@ -104,6 +104,8 @@ algorithm
   errMonotone    := relativeError(T=TMonotone, TExa=TExa, dTCha=  dTCha);
 
   annotation (
+experiment(StopTime=1.0),
+
     Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,-100},{
             100,100}})),
     __Dymola_Commands(file=

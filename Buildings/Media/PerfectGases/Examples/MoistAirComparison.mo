@@ -55,7 +55,9 @@ equation
     assert( abs(errMix) < 2.01, "Error too large. Check medium model.");
     assert( abs(errT) < 0.01, "Error too large. Check medium model.");
 
-   annotation(Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
+   annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}})),
                        __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Media/PerfectGases/Examples/MoistAirComparison.mos"
         "Simulate and plot"),

@@ -13,7 +13,9 @@ equation
   der(y)=der(x);
   assert(abs(x-y) < 1E-2, "Model has an error");
   ex=exp(-abs(time-2));
- annotation(Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
+ annotation (
+experiment(StopTime=4),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}),
                     graphics),
                      __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Functions/Examples/SmoothExponentialDerivativeCheck.mos" "Simulate and plot"),

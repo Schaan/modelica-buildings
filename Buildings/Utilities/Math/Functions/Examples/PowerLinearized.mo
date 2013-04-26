@@ -10,7 +10,9 @@ equation
   T = Buildings.Utilities.Math.Functions.powerLinearized(x=T4, x0=243.15^4, n=0.25);
   TExact = abs(T4)^(1/4);
 
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
+  annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}),
                      graphics),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Functions/Examples/PowerLinearized.mos" "Simulate and plot"));

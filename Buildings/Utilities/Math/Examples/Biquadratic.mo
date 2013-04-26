@@ -21,7 +21,9 @@ equation
       points={{-59,30},{-50,30},{-50,44},{-42,44}},
       color={0,0,127},
       smooth=Smooth.None));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-100,-100},
+  annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-100,-100},
             {100,100}}),
                      graphics),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Examples/Biquadratic.mos"

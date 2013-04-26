@@ -84,7 +84,9 @@ equation
       color={255,204,51},
       thickness=0.5,
       smooth=Smooth.None));
-  annotation (Diagram(graphics),
+  annotation (
+experiment(StopTime=86400),
+Diagram(graphics),
               __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/HeatTransfer/Windows/Examples/FixedShade.mos"
         "Simulate and plot"),
     Documentation(info="<html>

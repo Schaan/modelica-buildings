@@ -114,7 +114,9 @@ equation
       points={{-20,23.1667},{-10,23.1667},{-10,-180},{20,-180}},
       color={191,0,0},
       smooth=Smooth.None));
-  annotation (Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-200,-200},
+  annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-200,-200},
             {100,100}})),
             __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Rooms/BaseClasses/Examples/RadiationTemperature.mos"
         "Simulate and plot"));

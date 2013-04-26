@@ -29,7 +29,9 @@ equation
     der(hAirCod)=der(hAirSym);
     assert(abs(hAirCod-hAirSym) < 1E-2, "Model has an error");
 
-   annotation(Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
+   annotation (
+experiment(StopTime=373.15),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}})),
                        __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Media/PerfectGases/Examples/MoistAirDerivativeCheck.mos"
         "Simulate and plot"),

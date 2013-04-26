@@ -51,6 +51,8 @@ equation
       string="%first",
       index=-1,
       extent={{-6,3},{-6,3}}));
-  annotation (Diagram(graphics), __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/BoundaryConditions/SolarGeometry/BaseClasses/Examples/ZenithAngle.mos"
+  annotation (
+experiment(StopTime=300000),
+Diagram(graphics), __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/BoundaryConditions/SolarGeometry/BaseClasses/Examples/ZenithAngle.mos"
         "Simulate and plot"));
 end ZenithAngle;

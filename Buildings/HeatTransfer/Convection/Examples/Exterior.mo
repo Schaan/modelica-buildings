@@ -150,7 +150,9 @@ equation
       points={{-39,130},{50,130},{50,-9},{58,-9}},
       color={0,0,127},
       smooth=Smooth.None));
-  annotation (Diagram(coordinateSystem(extent={{-100,-100},
+  annotation (
+experiment(StopTime=3600),
+Diagram(coordinateSystem(extent={{-100,-100},
             {140,180}})),
              __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/HeatTransfer/Convection/Examples/Exterior.mos"
         "Simulate and plot"),

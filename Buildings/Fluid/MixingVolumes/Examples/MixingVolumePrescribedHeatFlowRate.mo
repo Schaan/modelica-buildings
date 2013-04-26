@@ -74,7 +74,9 @@ equation
       points={{20,30},{30,30}},
       color={191,0,0},
       smooth=Smooth.None));
-  annotation (Documentation(
+  annotation (
+experiment(StopTime=1.0),
+Documentation(
         info="<html>
 <p>
 This model demonstrates the use of the mixing volume with a prescribed heat flow rate.

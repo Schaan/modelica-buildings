@@ -5,7 +5,9 @@ model TestSimpleAir
      redeclare package Medium =
           Buildings.Media.GasesPTDecoupled.SimpleAir);
 
-      annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{
+      annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{
             -100,-100},{100,100}})),
                            __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Media/GasesPTDecoupled/Examples/TestSimpleAir.mos"
         "Simulate and plot"),

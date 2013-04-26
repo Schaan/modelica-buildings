@@ -79,7 +79,9 @@ equation
       points={{1,40},{60,40},{60,6},{69,6}},
       color={0,0,127},
       smooth=Smooth.None));
- annotation (Diagram(graphics),
+ annotation (
+experiment(StopTime=1.0),
+Diagram(graphics),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Comfort/Examples/Fanger.mos"
         "Simulate and plot"),
     Documentation(info="<html>

@@ -25,6 +25,8 @@ equation
       color={0,0,127},
       smooth=Smooth.None));
   annotation (
+experiment(StopTime=1.0),
+
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},{160,
             160}})),
     __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Movers/Examples/FlowMachine_Nrpm.mos"

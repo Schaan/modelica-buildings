@@ -106,7 +106,9 @@ equation
       points={{-39,60},{-10,60},{-10,19},{-2,19}},
       color={0,0,127},
       smooth=Smooth.None));
-  annotation (Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,
+  annotation (
+experiment(StopTime=3600),
+Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,
             -100},{100,100}})),
              __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/Chillers/Examples/Carnot.mos"
         "Simulate and plot"),

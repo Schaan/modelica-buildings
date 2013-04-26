@@ -140,7 +140,9 @@ equation
       points={{152,30},{148,30},{148,-66},{142,-66}},
       color={0,127,255},
       smooth=Smooth.None));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-100,
+  annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-100,
             -100},{180,100}})),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/HeatExchangers/BaseClasses/Examples/Manifold.mos"
         "Simulate and plot"));

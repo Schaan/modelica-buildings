@@ -163,7 +163,9 @@ equation
       points={{80,32},{112,32},{112,50},{140,50}},
       color={0,127,255},
       smooth=Smooth.None));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-100,-100},
+  annotation (
+experiment(StopTime=3600),
+Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-100,-100},
             {200,200}}),       graphics),
                       __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/HeatExchangers/Examples/WetCoilDiscretizedPControl.mos"
         "Simulate and plot"),

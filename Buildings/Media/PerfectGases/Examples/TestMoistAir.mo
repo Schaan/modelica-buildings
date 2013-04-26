@@ -5,7 +5,9 @@ model TestMoistAir
      redeclare package Medium =
           Buildings.Media.PerfectGases.MoistAir);
 
-      annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{
+      annotation (
+experiment(StopTime=1.0),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{
             -100,-100},{100,100}})),
                            __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Media/PerfectGases/Examples/TestMoistAir.mos"
         "Simulate and plot"),

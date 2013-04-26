@@ -120,7 +120,9 @@ equation
       points={{1,50},{10,50},{10,20},{19,20}},
       color={255,127,0},
       smooth=Smooth.None));
-  annotation (Diagram(graphics),__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/HeatExchangers/DXCoils/BaseClasses/Examples/WetCoil.mos"
+  annotation (
+experiment(StopTime=1.0),
+Diagram(graphics),__Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Fluid/HeatExchangers/DXCoils/BaseClasses/Examples/WetCoil.mos"
         "Simulate and plot"),
           Documentation(info="<html>
 <p>

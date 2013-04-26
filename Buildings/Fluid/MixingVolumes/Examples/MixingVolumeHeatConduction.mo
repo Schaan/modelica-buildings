@@ -73,7 +73,9 @@ equation
       points={{42,20},{42,-10},{60,-10}},
       color={0,127,255},
       smooth=Smooth.None));
-  annotation (Documentation(
+  annotation (
+experiment(StopTime=1.0),
+Documentation(
         info="<html>
 <p>
 This model demonstrates the use of the mixing volume with heat conduction to the ambient.

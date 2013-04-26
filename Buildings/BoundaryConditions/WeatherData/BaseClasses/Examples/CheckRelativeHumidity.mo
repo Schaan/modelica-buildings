@@ -11,7 +11,9 @@ equation
       points={{41,10},{58,10}},
       color={0,0,127},
       smooth=Smooth.None));
-  annotation (Diagram(graphics), __Dymola_Commands(file=
+  annotation (
+experiment(StopTime=8640000),
+Diagram(graphics), __Dymola_Commands(file=
           "modelica://Buildings/Resources/Scripts/Dymola/BoundaryConditions/WeatherData/BaseClasses/Examples/CheckRelativeHumidity.mos"
         "Simulate and plot"));
 end CheckRelativeHumidity;

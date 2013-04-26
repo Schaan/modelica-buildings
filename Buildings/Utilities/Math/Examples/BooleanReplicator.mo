@@ -12,7 +12,9 @@ equation
       points={{-19,10},{-2,10}},
       color={255,0,255},
       smooth=Smooth.None));
-annotation (Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,
+annotation (
+experiment(StopTime=600),
+Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,
             -100},{100,100}}),
                     graphics),
             __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Examples/BooleanReplicator.mos"

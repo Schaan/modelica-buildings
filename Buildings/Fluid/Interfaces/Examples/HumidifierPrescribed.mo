@@ -617,7 +617,9 @@ equation
       points={{-8,-180},{20,-180},{20,-172}},
       color={0,127,255},
       smooth=Smooth.None));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-200,
+  annotation (
+experiment(StopTime=3600),
+Diagram(coordinateSystem(preserveAspectRatio=true,  extent={{-200,
             -320},{360,200}}), graphics={
         Text(
           extent={{30,204},{158,162}},

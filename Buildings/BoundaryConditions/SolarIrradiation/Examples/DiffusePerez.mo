@@ -62,6 +62,8 @@ equation
       index=-1,
       extent={{-6,3},{-6,3}}));
   annotation (
+experiment(StopTime=1.83168e+07),
+
     Diagram(coordinateSystem(preserveAspectRatio=true, extent={{-100,-100},{100,
             100}}), graphics),
     __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/BoundaryConditions/SolarIrradiation/Examples/DiffusePerez.mos"

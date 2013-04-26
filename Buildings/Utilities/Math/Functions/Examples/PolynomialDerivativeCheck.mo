@@ -11,7 +11,9 @@ equation
   // Trigger an error if the derivative implementation is incorrect.
   assert(abs(x-y) < 1E-2, "Model has an error.");
 
- annotation(Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
+ annotation (
+experiment(StopTime=4),
+Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-100,
             -100},{100,100}}),
                     graphics),
                      __Dymola_Commands(file="modelica://Buildings/Resources/Scripts/Dymola/Utilities/Math/Functions/Examples/PolynomialDerivativeCheck.mos" "Simulate and plot"),
